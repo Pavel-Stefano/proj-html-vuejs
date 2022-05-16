@@ -4,6 +4,7 @@
     <main>
       <section-fitness />
       <section-form />
+      <section-icons />
     </main>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import AppHeader from './components/AppHeader.vue'
 import SectionFitness from './components/SectionFitness.vue'
 import SectionForm from './components/SectionForm.vue'
+import SectionIcons from './components/SectionIcons.vue'
 
 export default {
   name: 'App',
@@ -19,6 +21,7 @@ export default {
     AppHeader,
     SectionFitness,
     SectionForm,
+    SectionIcons,
   }
 }
 </script>
