@@ -1,16 +1,24 @@
 <template>
   <div id="app">
     <app-header />
+    <main>
+      <section-fitness />
+      <section-form />
+    </main>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
+import SectionFitness from './components/SectionFitness.vue'
+import SectionForm from './components/SectionForm.vue'
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    SectionFitness,
+    SectionForm,
   }
 }
 </script>
