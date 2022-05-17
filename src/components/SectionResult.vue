@@ -5,7 +5,7 @@
         <img src="../assets/images/divider-xx-red.png" alt="">
         <div class="container">
             <div class="row">
-                <div class="card-result debug" v-for="(card, index) in people" :key="index">
+                <div class="card-result" v-for="(card, index) in people" :key="index">
                     <div class="box-image"> 
                         <img :src="require('../assets/images/' + card.image)" alt="">
                     </div>

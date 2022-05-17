@@ -11,11 +11,16 @@
       <section-trainers />
       <section-news />
     </main>
+    <footer>
+      <top-footer />
+      <contact-footer />
+    </footer>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
+import ContactFooter from './components/ContactFooter.vue'
 import SectionFitness from './components/SectionFitness.vue'
 import SectionForm from './components/SectionForm.vue'
 import SectionIcons from './components/SectionIcons.vue'
@@ -24,6 +29,7 @@ import SectionPerformance from './components/SectionPerformance.vue'
 import SectionResult from './components/SectionResult.vue'
 import SectionTestimonial from './components/SectionTestimonial.vue'
 import SectionTrainers from './components/SectionTrainers.vue'
+import TopFooter from './components/TopFooter.vue'
 
 
 export default {
@@ -33,11 +39,13 @@ export default {
     SectionFitness,
     SectionForm,
     SectionIcons,     //icons da rifinire stampare icone / importare icone che ora le prendo con la cdn
-    SectionResult,    //result da rifinire stampare immagini 
+    SectionResult, 
     SectionPerformance,
     SectionTestimonial,
-    SectionTrainers,    //trainers stampare le immagini dinamicamente
-    SectionNews,       
+    SectionTrainers,  
+    SectionNews,
+    TopFooter,
+    ContactFooter,       
   }
 }
 </script>
