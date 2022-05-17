@@ -58,7 +58,7 @@ export default {
        
    },
    mounted(){
-       console.log(this.items[0].title)
+    //    console.log(this.items[0].title)
    }
 }
 </script>
