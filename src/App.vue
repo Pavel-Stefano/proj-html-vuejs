@@ -8,6 +8,7 @@
       <section-result />
       <section-performance />
       <section-testimonial />
+      <section-trainers />
     </main>
   </div>
 </template>
@@ -20,6 +21,7 @@ import SectionIcons from './components/SectionIcons.vue'
 import SectionPerformance from './components/SectionPerformance.vue'
 import SectionResult from './components/SectionResult.vue'
 import SectionTestimonial from './components/SectionTestimonial.vue'
+import SectionTrainers from './components/SectionTrainers.vue'
 
 
 export default {
@@ -31,7 +33,8 @@ export default {
     SectionIcons,     //icons da rifinire stampare icone / importare icone che ora le prendo con la cdn
     SectionResult,    //result da rifinire stampare immagini 
     SectionPerformance,
-    SectionTestimonial,       
+    SectionTestimonial,
+    SectionTrainers,       //trainers stampare le immagini dinamicamente
   }
 }
 </script>

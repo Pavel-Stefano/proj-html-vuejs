@@ -5,13 +5,6 @@
             <img src="../assets/images/divider-white-xx.png" alt="">
             <h5>{{author.toUpperCase()}}</h5>
         </div>
-        <!-- <p>"I fear not the man who has practiced 10,000 <br>
-        kicks once, but I fear the man who has <br>
-        practiced one kick 10,000 times"</p> -->
-        
-        <!-- <h5>Bruce lee . quote of the day</h5> -->
-        
-
     </section>
    
 
