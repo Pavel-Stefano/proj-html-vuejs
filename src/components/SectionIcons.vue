@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="box col-3 text-center" v-for="(item,index) in items" :key="index">
                     
+                    <!-- <div class="icons"><i class="`fa-solid + ' '`" item.icon></i></div> -->
                     <div class="icons"><i class="fa-solid fa-bicycle"></i></div>
-                    <!-- <div><i :class="`{{items[0].icon}}`"></i></div> -->
-                    <h5>{{items[index].title}}</h5>
+                    <h5>{{items.title}}</h5>
                     <img src="../assets/images/divider-x-red.png" alt="">
-                    <p>{{items[index].text}}</p>
+                    <p>{{item.text}}</p>
                 </div>
             </div>
         </div>
@@ -25,25 +25,25 @@ export default {
       return {
          items: [
              {
-                 icon: '"fa-solid fa-bicycle"',
+                 icon: 'fa-bicycle',
                  title: 'Strength & Conditioning',
                  image: '"../assets/images/divider-x-red.png"',
                  text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolor iste doloribus sit'
              },
              {
-                 icon: '"fa-solid fa-bicycle"',
+                 icon: 'fa-bicycle',
                  title: 'Fitness & Cardio',
                  image: '"../assets/images/divider-x-red.png"',
                  text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolor iste doloribus sit'
              },
              {
-                 icon: '"fa-solid fa-bicycle"',
+                 icon: 'fa-bicycle',
                  title: 'Flexibility & Rest',
                  image: '"../assets/images/divider-x-red.png"',
                  text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolor iste doloribus sit'
              },
              {
-                 icon: '"fa-solid fa-bicycle"',
+                 icon: 'fa-bicycle',
                  title: 'Health & Diet',
                  image: '"../assets/images/divider-x-red.png"',
                  text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolor iste doloribus sit'
