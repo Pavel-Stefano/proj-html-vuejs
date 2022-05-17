@@ -20,11 +20,11 @@ import SectionResult from './components/SectionResult.vue'
 export default {
   name: 'App',
   components: {
-    AppHeader,
+    AppHeader,  
     SectionFitness,
     SectionForm,
-    SectionIcons,
-    SectionResult,
+    SectionIcons,     //icons da rifinire stampare icone / importare icone che ora le prendo con la cdn
+    SectionResult,    //result da rifinire stampare immagini    
   }
 }
 </script>

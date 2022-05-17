@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'SectionForm',
+  name: 'SectionIcons',
   data(){
       return {
          items: [

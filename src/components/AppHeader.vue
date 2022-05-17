@@ -43,6 +43,7 @@ export default {
 
 header {
   background: $backgroundBlack;
+  // background-blend-mode: color-dodge;  effetto sfondo più bello
   height: 100vh;
   color: $textWhite;
   background-image: url('../assets/images/home-banner.jpg');
@@ -59,7 +60,7 @@ header {
 .top-header {
   display: flex;
   justify-content: space-between;
-  margin: 0 200px;
+  margin: 0 135px;
   padding-top: 90px;
   align-items: baseline;
 }
@@ -71,7 +72,7 @@ header .container {
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 145px;
+  bottom: 93px;
   h1, button {
     text-transform: uppercase;
   }
