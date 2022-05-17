@@ -29,7 +29,7 @@ export default {
 @import '../style/vars.scss';
 
 .fitness {
-    background-color: #252a2d;
+    background-color: $backgroundGrey1;
     height: 400px;
     display: flex;
     justify-content: center;

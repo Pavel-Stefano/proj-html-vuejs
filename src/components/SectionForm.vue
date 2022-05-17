@@ -2,11 +2,11 @@
     <section class="form-section">
         <div class="container">
             <div class="row">
-                 <div class="col-6 box-img debug">
+                 <div class="col-6 box-img">
                     <img src="../assets/images/home_img-compressor.jpg" alt="">
                 </div>
 
-                <div class="col-6 box-form debug">
+                <div class="col-6 box-form">
                     <h4>{{subTitle}}</h4>
                     <span>Name..*</span>
                     <input type="text">

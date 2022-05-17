@@ -99,10 +99,6 @@ export default {
     .box img {
         padding: 20px 0;
     }
-
-.debug {
-  border: 1px solid black;
-}
     
 }
 
