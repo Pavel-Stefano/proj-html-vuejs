@@ -3,76 +3,18 @@
 
         <h2>{{title.toUpperCase()}}</h2>
         <img src="../assets/images/divider-xx-red.png" alt="">
-        <div class="container">
-            <div class="row">
-
-                <div class="card-news col-4">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/blog1-400x208.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Train with free weights or your body weight?</h4>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]</span>
-                    </div>
-                </div>
-
-                <div class="card-news col-4">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/blog6-800x800.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Train with free weights or your body weight?</h4>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]</span>
-                    </div>
-                </div>
-
-                <div class="card-news col-4">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/trainer4-400x297.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Train with free weights or your body weight?</h4>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]</span>
-                    </div>
-                </div>
-
-                <div class="card-news col-4">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/blog4-400x289.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Train with free weights or your body weight?</h4>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]</span>
-                    </div>
-                </div>
-
-                <div class="card-news col-4">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/trainer3-400x297.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Train with free weights or your body weight?</h4>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]</span>
-                    </div>
-                </div>
-
-                <div class="card-news col-4">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/trainer1-400x297.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Train with free weights or your body weight?</h4>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]</span>
-                    </div>
-                </div>
-
+        <div class="container clearfix">
                 <!-- card dinamica -->
-                <!-- <div class="card-news col-4" v-for="(article,index) in articles" :key="index"> -->
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <!-- <img src="../assets/images/trainer1-400x297.jpg" alt="">
+                <div class="card-news" v-for="(item, index) in articles" :key="index">
+                    <img :src="require('../assets/images/' + item.image)" alt="">
+    
                     <div class="content-card">
-                        <h4>{{article[index].titleArticles}}</h4>
-                        <span>{{article[index].textArticle}}</span> -->
-                    <!-- </div>
-                </div> -->
-
+                        <h4>{{item.titleArticles}}</h4>
+                        <span>{{item.textArticle}}</span>
+                    </div>
+                </div>
             </div>
             <button>{{textButton.toUpperCase()}}</button>
-        </div>
     </section>
    
 
@@ -87,32 +29,32 @@ export default {
           articles: [
               { 
                   titleArticles: 'Train with free weights or your body weight?',
-                  image: `../assets/images/blog1-400x208.jpg`,
+                  image: 'blog1-400x208.jpg',
                   textArticle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]'
               },
               { 
                   titleArticles: 'Nutritional advice that will keep you training',
-                  image: `../assets/images/blog6-800x800.jpg`,
+                  image: 'blog6-800x800.jpg',
                   textArticle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]'
               },
               { 
                   titleArticles: 'Simple principles for your next workout',
-                  image: `../assets/images/trainer4-400x297.jpg`,
+                  image: 'trainer4-400x297.jpg',
                   textArticle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]'
               },
               { 
                   titleArticles: "To be number one, train like you're number two",
-                  image: `../assets/images/blog4-400x289.jpg`,
+                  image: 'blog4-400x289.jpg',
                   textArticle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]'
               },
               { 
                   titleArticles: 'Top 5 mistakes every gym member makes',
-                  image: `../assets/images/trainer3-400x297`,
+                  image: 'trainer3-400x297.jpg',
                   textArticle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]'
               },
               { 
                   titleArticles: 'The myths of shedding body fat explored',
-                  image: `../assets/images/trainer1-400x297.jpg`,
+                  image: 'trainer1-400x297.jpg',
                   textArticle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus.[...]'
               },
               
@@ -171,6 +113,12 @@ button {
     background: none;
     color: $textWhite;
     border: 1px solid $textWhite;
+}
+
+.clearfix {
+    clear: both;
+    content: '';
+    display: table;
 }
   
 </style>

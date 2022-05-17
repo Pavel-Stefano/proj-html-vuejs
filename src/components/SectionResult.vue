@@ -6,13 +6,12 @@
         <div class="container">
             <div class="row">
                 <div class="card-result debug" v-for="(card, index) in people" :key="index">
-                    <div class="box-image">
-                        <!-- <img :src="people[index].image" alt=""> -->
-                        <img src="../assets/images/review_1-compressor.jpg" alt="">
+                    <div class="box-image"> 
+                        <img :src="require('../assets/images/' + card.image)" alt="">
                     </div>
                     <div class="box-text">
-                        <span>{{people[index].descriptions}}</span>
-                        <h6>-{{people[index].nome}}</h6>
+                        <span>{{card.descriptions}}</span>
+                        <h6>-{{card.nome}}</h6>
 
                     </div>
                 </div>
@@ -32,24 +31,24 @@ export default {
           people: [
               {
                   nome: 'Tara Smith',
-                  image: '../assets/images/review_1-compressor.jpg',
+                  image: 'review_1-compressor.jpg',
                   descriptions: '"The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for.I love it!"'
 
               },
               {
                   nome: 'Simon Chel',
-                  image: '../assets/images/review_3-compressor-2.jpg',
+                  image: 'review_3-compressor-2.jpg',
                   descriptions: '"The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out."'
 
               },
               {
                   nome: 'Jen Wirth',
-                  image: '../assets/images/review_2-compressor.jpg',
+                  image: 'review_2-compressor.jpg',
                   descriptions: '"The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment."'
               },
               {
                   nome: 'Jeff Glum',
-                  image: '../assets/images/review_4-compressor-2.jpg',
+                  image: 'review_4-compressor-2.jpg',
                   descriptions: '"No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers."'
               }
           ]

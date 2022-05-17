@@ -8,12 +8,11 @@
 
                 <!-- card dinamica -->
                 <div class="card-trainers col-4" v-for="(trainer,index) in cardsTrainers" :key="index">
-                    <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/trainer1-400x297.jpg" alt="">
+                    <img :src="require('../assets/images/' + trainer.image)" alt="">
                     <div class="content-card">
-                        <p>{{cardsTrainers[index].nome}}</p>
-                        <p>{{cardsTrainers[index].ruolo}}</p>
-                        <span>{{cardsTrainers[index].descrizione}}</span>
+                        <p>{{trainer.nome}}</p>
+                        <p>{{trainer.ruolo}}</p>
+                        <span>{{trainer.descrizione}}</span>
                         <div class="icon-container">
                             <div class="content-icon">
                                 <i class="fa-brands fa-facebook-f"></i>
@@ -46,20 +45,20 @@ export default {
               { 
                   nome: 'Ann Baker',
                   ruolo: 'Personal Trainer',
-                  image: `../assets/images/trainer1-400x297.jpg`,
+                  image: 'trainer1-400x297.jpg',
                   descrizione: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, saepe? Totam blanditiis tempore'
               },
               { 
                   nome: 'Anne Warren',
                   ruolo: 'Personal Trainer',
-                  image: `../assets/images/trainer3-400x297.jpg`,
+                  image: 'trainer3-400x297.jpg',
                   descrizione: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, saepe? Totam blanditiis tempore'
 
               },
               { 
                   nome: 'Peter Rice',
                   ruolo: 'Personal Trainer',
-                  image: `../assets/images/trainer4 -400x297.jpg`,
+                  image: 'trainer4-400x297.jpg',
                   descrizione: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, saepe? Totam blanditiis tempore'
 
               },

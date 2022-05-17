@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="card-performance col-4" v-for="(card,index)  in images" :key="index">
                     <!-- <img :src="require(card[index].image)" alt=""> -->
-                    <img src="../assets/images/home-image1.jpg" alt="">
+                    <img :src="require('../assets/images/' + card.image)" alt="">
                 </div>
             </div>
         </div>
@@ -24,22 +24,22 @@ export default {
           title: 'High performance facilities',
           images: [
               { 
-                  image: `../assets/images/home-image1.jpg`
+                  image: `home-image1.jpg`
               },
               { 
-                  image: `../assets/images/home-image2.jpg`
+                  image: `home-image2.jpg`
               },
               { 
-                  image: `../assets/images/home-image3.jpg`
+                  image: `home-image3.jpg`
               },
               { 
-                  image: `../assets/images/home-image4.jpg`
+                  image: `home-image4.jpg`
               },
               { 
-                  image: `../assets/images/home-image54.jpg`
+                  image: `home-image54.jpg`
               },
               { 
-                  image: `../assets/images/home-image6.jpg`
+                  image: `home-image6.jpg`
               },
               
              
