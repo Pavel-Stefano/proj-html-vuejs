@@ -3,24 +3,25 @@
 
         <h2>{{title.toUpperCase()}}</h2>
         <img class="divider" src="../assets/images/divider-xx-red.png" alt="">
-        <div class="container clearfix">
-                <!-- card dinamica -->
-                <div class="card-news" v-for="(item, index) in articles" :key="index">
-                    <div class="image">
-                        <img :src="require('../assets/images/' + item.image)" alt="">
-                        <div class="overflow">
-                            <!-- icone -->
-                            <i class="fa-solid fa-link"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>             
-                        </div>
-                    </div>
-                    
-                    <div class="content-card">
-                        <h4>{{item.titleArticles}}</h4>
-                        <span>{{item.textArticle}}</span>
+        <div class="container">
+
+                <!-- CARD DINAMICA -->
+            <div class="card-news" v-for="(item, index) in articles" :key="index">
+                <div class="image">
+                    <img :src="require('../assets/images/' + item.image)" alt="">
+                    <div class="overflow">
+                        <!-- icone -->
+                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>             
                     </div>
                 </div>
+                <div class="content-card">
+                    <h4>{{item.titleArticles}}</h4>
+                    <span>{{item.textArticle}}</span>
+                </div>
             </div>
+        </div>
+        
             <button>{{textButton.toUpperCase()}}</button>
     </section>
    
@@ -86,10 +87,14 @@ mounted(){
     background-color: $backgroundGrey1;
     color: $textWhite;
     padding: 100px 0;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .card-news {
         margin: 20px;
         width: calc(100% / 3 - 40px);
-        float: left;
+       
         .content-card {
             text-align: left;
             padding: 30px;
@@ -173,4 +178,10 @@ button {
 .divider {
     margin: 35px 0;
 }
+
+.m-negative {
+    margin-top: -11%;
+}
+
+
 </style>
