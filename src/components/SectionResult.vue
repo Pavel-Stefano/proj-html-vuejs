@@ -12,7 +12,6 @@
                     <div class="box-text">
                         <span>{{card.descriptions}}</span>
                         <h6>-{{card.nome}}</h6>
-
                     </div>
                 </div>
             </div>
@@ -73,7 +72,7 @@ export default {
     color: $textWhite;
     padding: 100px 0;
     .card-result {
-        background-color: #212425;
+        background-color: $backgroundGrey2;
         display: flex;
         align-items: center;
         padding: 20px 40px;
@@ -90,6 +89,7 @@ export default {
             font-size: 17px;
             box-sizing: border-box;
             text-align: left;
+            color: $backgroundLightGrey;
         }
     }
     img {
@@ -100,6 +100,7 @@ export default {
     }
     h6 {
         margin-top: 15px;
+        color: $backgroundLightGrey;
     }
 }
 

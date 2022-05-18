@@ -30,6 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+@import '../style/vars.scss';
 .nav-bar {
     display: flex;
     align-items: center;
@@ -39,6 +40,10 @@ export default {
         margin: 0 12px;
         text-transform: uppercase;
         list-style-type: none;
+        cursor: pointer;
+            &:hover  {
+                color: $textRose1,      
+            }
         }
     }
 }

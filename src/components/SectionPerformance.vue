@@ -74,6 +74,24 @@ mounted(){
         
         img {
             width: 100%;
+             &:hover {
+                transform: scale(1.1);
+                transition: 0.8s;
+
+                // animation: scaleImg 2s linear;
+                // @keyframes scaleImg {
+                //     0% {
+                //         transform: scale(0);
+                //     }
+                //     50% {
+                //         transform: scale(1.1);
+                //     }
+                //     100% {
+                //         transform: scale(01.1);
+                //     }
+                // }
+                box-shadow: 2px 2px 20px 15px $backgroundGrey2;
+            }
         }
         h2 {
             font-size: 40px;
@@ -87,7 +105,7 @@ mounted(){
         }
     }
     img {
-        padding: 35px 0;
+        margin: 35px 0;
         }
 
 }

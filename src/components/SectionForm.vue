@@ -59,17 +59,39 @@ h4 {
 }
 input {
     margin-bottom: 25px;
-    background-color: $backgroundGrey2;
-    border: 1px solid $backgroundBlue1;
-}
-input {
+    background-color: $backgroundGrey1;
+    border: 1px solid $backgroundGrey3;
     padding: 5px;
+    &:hover {
+        border: 1px solid $backgroundGrey1;
+        transition: 0.5s;
+    }
 }
 button {
     margin-top: 15px;
     padding: 15px;
     background-color: $BackgroundRose1;
     color: $textWhite;
+}
+
+img {
+     &:hover {
+                transform: scale(1.1);
+                transition: 0.8s;
+
+                // animation: scaleImg 2s linear;
+                // @keyframes scaleImg {
+                //     0% {
+                //         transform: scale(0);
+                //     }
+                //     50% {
+                //         transform: scale(1.1);
+                //     }
+                //     100% {
+                //         transform: scale(01.1);
+                //     }
+                // }
+            }
 }
   
 </style>

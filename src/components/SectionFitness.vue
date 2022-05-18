@@ -5,6 +5,7 @@
         <img src="../assets/images/divider-xx-red.png" alt="">
         <p>At Avada Gym, everything we do from top to bottom is of the highest quality to ensure we're equipped <br>
         to help you reach your goals of a healthy and lifestyle.</p>
+        <i class="fa-solid fa-square-full"></i>
     </section>
    
 
@@ -36,6 +37,7 @@ export default {
     align-items: center;
     flex-direction: column;
     color: $textWhite;
+    position: relative;
     img {
         padding: 35px 0;
     }
@@ -46,6 +48,15 @@ export default {
     p {
         font-size: 20px;
     }
+}
+
+i {
+    color: $backgroundGrey1;
+    position: absolute;
+    bottom: -26px;
+    transform: rotate(45deg);
+    font-size: 50px;
+    border: 1px solid $backgroundGrey1;
 }
 
   

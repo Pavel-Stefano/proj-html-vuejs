@@ -30,6 +30,7 @@
             </div>
             <button>{{textButton.toUpperCase()}}</button>
         </div>
+        <i class="icon fa-solid fa-square-full"></i>
     </section>
    
 
@@ -87,6 +88,7 @@ mounted(){
     flex-direction: column;
     color: $textWhite;
     padding: 100px 0;
+    position: relative;
     .card-trainers {
         display: flex;
         flex-direction: column;
@@ -131,6 +133,24 @@ mounted(){
     }
     img {
         padding: 35px 0 0;
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.8s;
+
+                // animation: scaleImg 2s linear;
+                // @keyframes scaleImg {
+                //     0% {
+                //         transform: scale(0);
+                //     }
+                //     50% {
+                //         transform: scale(1.1);
+                //     }
+                //     100% {
+                //         transform: scale(01.1);
+                //     }
+                // }
+                box-shadow: 10px 10px 8px $backgroundGrey2;
+            }
         }
 
 }
@@ -140,6 +160,15 @@ button {
     background: none;
     color: $textWhite;
     border: 1px solid $textWhite;
+}
+
+i.icon {
+    color: $backgroundGrey2;
+    position: absolute;
+    bottom: -26px;
+    transform: rotate(45deg);
+    font-size: 50px;
+    border: 1px solid $backgroundGrey2;
 }
 
   

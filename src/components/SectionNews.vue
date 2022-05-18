@@ -2,12 +2,19 @@
     <section class="news text-center">
 
         <h2>{{title.toUpperCase()}}</h2>
-        <img src="../assets/images/divider-xx-red.png" alt="">
+        <img class="divider" src="../assets/images/divider-xx-red.png" alt="">
         <div class="container clearfix">
                 <!-- card dinamica -->
                 <div class="card-news" v-for="(item, index) in articles" :key="index">
-                    <img :src="require('../assets/images/' + item.image)" alt="">
-    
+                    <div class="image">
+                        <img :src="require('../assets/images/' + item.image)" alt="">
+                        <div class="overflow">
+                            <!-- icone -->
+                            <i class="fa-solid fa-link"></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>             
+                        </div>
+                    </div>
+                    
                     <div class="content-card">
                         <h4>{{item.titleArticles}}</h4>
                         <span>{{item.textArticle}}</span>
@@ -102,9 +109,34 @@ mounted(){
             text-align: left;
         }
     }
-    img {
-        padding: 35px 0 0;
+    .image {
+        position: relative;
+        &:hover .overflow {
+            background: $textRose1;
+            opacity: 0.7;
+            width: 100%;
+            transition: 1s;
+            justify-content: center;
+                i {
+                    // transition: 5s;  da rifinire
+                    opacity: 1;
+                    display: block;
+                }
+            &:hover img {
+            opacity: 0.7;
+            transition: 1.2s;
+            width: 100%;
+            }
         }
+    }
+    h4 {
+        cursor: pointer;
+            &:hover {
+                color: $textRose1;
+                transition: 0.5s;
+            }
+        }
+    
 
 }
 button {
@@ -120,5 +152,25 @@ button {
     content: '';
     display: table;
 }
-  
+
+.overflow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    i {
+        display: none;
+        font-size: 30px;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+.divider {
+    margin: 35px 0;
+}
 </style>

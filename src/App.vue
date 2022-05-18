@@ -56,10 +56,18 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1884px;
 }
 
 h2 {
   font-weight: 900;
+}
+
+button {
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .debug {

@@ -7,6 +7,7 @@
           <img src="../assets/images/gym_logo_1x.png" alt="">
         </div>
         <nav-bar />
+        <button class="red">{{textButton.toUpperCase()}}</button>
       </div>
 
       <div class="container text-center">
@@ -31,6 +32,11 @@ export default {
 
     },
   name: 'AppHeader',
+  data(){
+      return {
+          textButton: 'Join us Today'
+      }
+  },
   props: {
     msg: String
   }
@@ -49,6 +55,8 @@ header {
   background-image: url('../assets/images/home-banner.jpg');
   background-repeat: no-repeat;
   background-position: top;
+  // background-position-y: -50%;  da applicare a una media query sopra i 1400px
+  background-size: cover;
  
 }
 
@@ -60,8 +68,8 @@ header {
 .top-header {
   display: flex;
   justify-content: space-between;
-  margin: 0 135px;
-  padding-top: 90px;
+  margin: 0 5% 5%;
+  padding-top: 1%;
   align-items: baseline;
 }
 
@@ -70,29 +78,37 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  bottom: 93px;
+  // justify-content: center;
+  // position: relative;
+  // bottom: 126px;
   h1, button {
     text-transform: uppercase;
   }
 }
 
 h1 {
-  font-size: 115px;
+  font-size: 107px;
   font-weight: 700;
 }
 p {
   font-size: 24px;
+  margin-top: 60px;
 }
 
  button {
   background: none;
   color: $textWhite;
   border: 1px solid $textWhite;
-  padding: 10px 25px;
+  padding: 15px 40px;
+  margin-top: 20px;
 }
 
+.red {
+    padding: 30px 35px;
+    background-color: $textRose1;
+    color: $textWhite;
+    border: 1px solid $textRose1;
+    }
   
 
 .debug {

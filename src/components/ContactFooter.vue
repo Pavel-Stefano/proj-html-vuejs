@@ -8,9 +8,14 @@
                         <li v-for="link in info" :key="link">{{link.contact}}</li>
                     </ul>
                 </div>
+
                 <div class="box post col-3">
                     <div class="title">{{titoloPost.toUpperCase()}}</div>
-                    <p v-for="text in postRecenti" :key="text"> > {{text.post}}</p>
+                    <div class="box-post" v-for="text in postRecenti" :key="text">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p> {{text.post}}</p>
+                    </div>
+                    
                 </div>
                 <div class="box col-3">
                     <div class="title">{{titoloApertura.toUpperCase()}}</div>
@@ -114,12 +119,12 @@ export default {
         padding-left: 0;
         li {
             list-style-type: none;
-    }
+        }
     }
 }
 
 .post p {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid  $backgroundGrey3;
     padding-bottom: 25px;
 }
 .post p:nth-child(3){
@@ -130,5 +135,16 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.box-post {
+    display: flex;
+    gap: 10px;
+    p {
+        cursor: pointer;
+        &:hover {
+            color: $textRose1;
+            transition: 0.5s;
+        }
+    }
 }
 </style>
