@@ -42,7 +42,8 @@ export default {
         list-style-type: none;
         cursor: pointer;
             &:hover  {
-                color: $textRose1,      
+                color: $textRose1;
+                transition: 0.5s;
             }
         }
     }

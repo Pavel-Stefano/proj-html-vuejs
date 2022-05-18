@@ -147,4 +147,11 @@ export default {
         }
     }
 }
+img {
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.8s;
+                box-shadow: 10px 10px 8px $backgroundGrey2;
+            }
+        }
 </style>

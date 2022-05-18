@@ -14,6 +14,7 @@
     <footer>
       <top-footer />
       <contact-footer />
+      <footer-copy />
     </footer>
   </div>
 </template>
@@ -21,6 +22,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import ContactFooter from './components/ContactFooter.vue'
+import FooterCopy from './components/FooterCopy.vue'
 import SectionFitness from './components/SectionFitness.vue'
 import SectionForm from './components/SectionForm.vue'
 import SectionIcons from './components/SectionIcons.vue'
@@ -45,7 +47,9 @@ export default {
     SectionTrainers,  
     SectionNews,
     TopFooter,
-    ContactFooter,       
+    ContactFooter,
+    FooterCopy,
+           
   }
 }
 </script>

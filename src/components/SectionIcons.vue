@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="box col-3 text-center" v-for="(item,index) in items" :key="index">
-                    
-                    <!-- <div class="icons"><i class="`fa-solid + ' '`" item.icon></i></div> -->
-                    <div class="icons"><i class="fa-solid fa-bicycle"></i></div>
-                    <h5>{{items.title}}</h5>
+                    <div class="top">
+                        <div class="icons"><i class="fa-solid fa-bicycle"></i></div>
+                        <h5>{{item.title}}</h5>
+                    </div>
                     <img src="../assets/images/divider-x-red.png" alt="">
                     <p>{{item.text}}</p>
                 </div>
@@ -99,7 +99,13 @@ export default {
     .box img {
         padding: 20px 0;
     }
-    
+    .top {
+        cursor: pointer;
+            &:hover h5 {
+                color: $textRose1;
+                transition: 0.5s;
+            }
+        }
 }
 
   

@@ -13,15 +13,27 @@
                         <p>{{trainer.nome}}</p>
                         <p>{{trainer.ruolo}}</p>
                         <span>{{trainer.descrizione}}</span>
-                        <div class="icon-container">
+                        <div class="icon-container text-center">
                             <div class="content-icon">
                                 <i class="fa-brands fa-facebook-f"></i>
+                                <span>
+                                    facebook
+                                    <i class="fa-solid fa-square-full"></i>
+                                </span>
                             </div>
                             <div class="content-icon">
                                 <i class="fa-brands fa-twitter"></i>
+                                <span>
+                                    twitter
+                                    <i class="fa-solid fa-square-full"></i>
+                                </span>
                             </div>
                             <div class="content-icon">
                                 <i class="fa-brands fa-instagram"></i>
+                                <span>
+                                    instagram
+                                    <i class="fa-solid fa-square-full"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -101,7 +113,7 @@ mounted(){
         }
 
         .icon-container {
-            margin-top: 20px;
+            margin-top: 35px;
             display: flex;
             .content-icon{
                 width: 40px;
@@ -112,8 +124,31 @@ mounted(){
                 justify-content: center;
                 align-items: center;
                 border-radius: 6px;
-                i {
+                cursor: pointer;
+                position: relative;
+                    &:hover span {
+                        opacity: 1;
+                        transition: 0.7s;
+                    }
+                .fa-brands {
                 font-size: 25px;
+                }
+                span {
+                    position: absolute;
+                    top: -30px;
+                    font-size: 12px;
+                    opacity: 0;
+                    background: $backgroundGrey2;
+                    padding: 2px 6px;
+                    border-radius: 5px;
+                    i {
+                       position: absolute;
+                        bottom: -4px;
+                        left: 40%;
+                        transform: rotate(45deg);
+                        font-size: 8px;
+                        color: $backgroundGrey2;
+                    }
                 }
             }
         }

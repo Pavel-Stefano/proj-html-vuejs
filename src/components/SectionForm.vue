@@ -2,11 +2,11 @@
     <section class="form-section">
         <div class="container">
             <div class="row">
-                 <div class="col-6 box-img">
+                 <div class="col box-img">
                     <img src="../assets/images/home_img-compressor.jpg" alt="">
                 </div>
 
-                <div class="col-6 box-form">
+                <div class="col box-form">
                     <h4>{{subTitle}}</h4>
                     <span>Name..*</span>
                     <input type="text">
@@ -46,6 +46,9 @@ export default {
     color: $textWhite;
     display: flex;
     align-items: center;
+    .row {
+        gap: 25px;
+    }
 }
 
 .box-form {
@@ -72,9 +75,11 @@ button {
     padding: 15px;
     background-color: $BackgroundRose1;
     color: $textWhite;
+    border: none;
 }
 
 img {
+    width: 100%;
      &:hover {
                 transform: scale(1.1);
                 transition: 0.8s;
