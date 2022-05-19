@@ -95,7 +95,64 @@ export default {
         border: 1px solid $BackgroundRose1;
         border-radius: 50%;
         padding: 20px;
+        position: relative;
+        &:hover {
+            transform: scale(0.9);
+            transition: 0.5s;
+        }
+        &:hover:after {
+            transform: scale(1.5);
+            transition: 0.5s;
+            // animation: circle-up 5s cubic-bezier 3s linear;
+        }
+        // @keyframes circle-up {
+        //     0% {
+        //         transform: scale(1);
+        //     }
+        //     50% {
+        //         transform: scale(1.5);
+        //     }
+        //     80%, 100% {
+        //         opacity: 0;
+        //     }
+        // }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            /* width: 300%; */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 1px solid $textRose1;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0,0,0,.3);
+            // animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+        }
+        // @keyframes pulse-ring {
+        //     0% {
+        //         transform: scale(.33);
+        //     }
+        //     80%, 100% {
+        //         opacity: 0;
+        //     }
+        // }
+
+        // @keyframes pulse-dot {
+        //     0% {
+        //         transform: scale(.8);
+        //     }
+        //     50% {
+        //         transform: scale(1);
+        //     }
+        //     100% {
+        //         transform: scale(.8);
+        //     }
+        // }
     }
+
+
     .box img {
         padding: 20px 0;
     }
